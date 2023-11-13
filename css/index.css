@@ -90,7 +90,8 @@ border-radius: 16px;
     max-width: 100% !important;
 }
 .email-newsletter input{
-background-color:  #1F1F1F8F !important;
+/* background-color:  #1F1F1F8F !important;
+color: white !important */
 ;
 }
 .inscrir-newsletter button{
