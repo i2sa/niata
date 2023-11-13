@@ -2,6 +2,16 @@
     font-family: inter;
     src: url("../Inter/static/Inter-Regular.ttf");
 }
+.logo-car{
+    width: 150px!important;
+   height:150px !important;
+   background-color: #D9D9D91A;
+   padding: 15px;
+
+}
+.nav-principal{
+    width: 88% !important;
+}
 .navbar{
     background-color: #FFFFFF !important;
     padding-inline: 40px;
@@ -90,8 +100,7 @@ border-radius: 16px;
     max-width: 100% !important;
 }
 .email-newsletter input{
-/* background-color:  #1F1F1F8F !important;
-color: white !important */
+background-color:  #1F1F1F8F !important;
 ;
 }
 .inscrir-newsletter button{
