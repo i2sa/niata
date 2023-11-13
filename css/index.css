@@ -1,0 +1,150 @@
+@font-face {
+    font-family: inter;
+    src: url("../Inter/static/Inter-Regular.ttf");
+}
+.navbar{
+    background-color: #FFFFFF !important;
+    padding-inline: 40px;
+    border-radius: 10px;
+   margin: 10px 40px;
+}
+.navbar-brand{
+    padding-inline-end: 80px !important;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #000000 !important
+}
+.card-search-container{
+    padding: 55px !important;
+background-color:  #FFFFFF !important;
+padding: 35px;
+border-radius: 16px;
+}
+.card-search{
+    background-color: #D9D9D9 !important;
+    border-radius: 16px !important;
+    box-shadow: -15px 15px 10px -4px    #D9D9D9 !important;
+}
+.valider-search-card{
+    background-color: #000000 !important;
+    display: block !important;
+    width: 250px !important;
+    /* margin-inline: -30px !important;
+    margin-block: 60px !important;
+    padding-inline: -80px !important; */
+    margin-top: 20px !important;
+    margin-left: 85px !important;
+}
+.car-hero{
+    max-width: 100%!important;
+    
+}
+.car-hero-img{
+    height: 350px !important;
+    max-width: 100%!important;
+}
+.car-hero-title{
+    /* font-size: 85px !important;
+    line-height: 44px !important;
+    margin-bottom: 60px !important; */
+}
+.notre-cote-auto ul >li{
+    margin: 9px !important;
+    list-style-type:disc !important;
+    color: white !important;
+}
+.nos-marque-auto .container{
+    background: #D9D9D91A !important;
+    max-width: 100% !important;
+    padding: 45px !important;
+
+}
+.nos-marque-auto a{
+    margin-top: -43px !important;
+   width: 240px !important;
+  
+}
+.card-avis{
+    background: linear-gradient(89.76deg, #000000 0.18%, rgba(0, 0, 0, 0) 99.76%) !important;
+    color: white !important;
+}
+.img-avis{
+    margin-inline: -33px !important;
+    margin-block: -15px !important;
+    /* padding: 1px !important; */
+    width: 130px;
+    height: 100px !important;
+    
+
+}
+.card-faq select {
+    background: #D9D9D91A!important;
+    color: white !important;
+}
+.from-select-lg{
+    background-image: url("../images/Vector.png") !important;
+    background-color: red !important;
+  
+}
+.container-newsletter{
+    max-width: 100% !important;
+}
+.email-newsletter input{
+background-color:  #1F1F1F8F !important;
+;
+}
+.inscrir-newsletter button{
+    margin-inline-start: -30px !important;
+    background-color:  #D9D9D9 !important;
+    border: none !important;
+    color:  #1F1F1F !important;
+    ;
+
+}
+.footer ul li{
+    list-style-type: none !important;
+    font-size: 13px !important;
+}
+.footer ul li a{
+   text-decoration: none ;
+}
+.footer .row{
+    /* padding-inline: 20px !important;*/
+    padding-block-start: 40px !important; 
+}
+.footer-line{
+    padding: 1px !important;
+}
+body{
+    background-color: #000000 !important;
+    font-family: inter !important;
+}
+@media screen and (min-width:400px) {
+   
+    
+    .card-search .card-body{
+    max-width: 500px !important;
+    }
+    .car-hero-title{
+        /* font-size: 27px !important;
+        line-height: 32px !important;
+        display: inline-block !important; */
+    }
+    /* .card-faq select > option{
+      width: 200px !important;
+    } */
+}
+
+    
+@media screen and (max-width:400px){
+
+    .valider-search-card{
+     margin-top:  20px !important;
+        margin: auto !important;
+        display: block !important;
+        width: 180px !important;}
+        .card-search{
+           width: 255px !important;
+        }
+   
+}
