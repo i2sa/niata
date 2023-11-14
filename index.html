@@ -13,10 +13,10 @@
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <title>NIATA </title>
   </head>
-  <body >
-    <div class="w-75 mx-auto">
-    <nav class="navbar navbar-expand-lg navbar-light nav-principal  mx-auto bg-light">
-        <div class="container-fluid">
+  <body class="position-relative" >
+    <div class="w-75 mx-auto ">
+    <nav class="navbar-expand-lg navbar fixed-top navbar-light bg-light  w-75 mx-auto">
+        <div class="container-fluid ">
           <a class="navbar-brand text-lg-center niata" href="#">NIATA             <span class="d-none d-lg-inline">  |</span></a>
           <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon "></span>
@@ -89,7 +89,8 @@
                     <li><hr class="dropdown-divider m-2"></li>
                     <li><a class="dropdown-item" href="#">Hybride</a></li>
                 </ul>
-              </li>   <li class="nav-item dropdown">
+              </li>   
+              <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown4" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Guide
                 </a>
@@ -119,9 +120,9 @@
         </div>
       </nav>
       <section class="decouvrir-nos-voiture">         
-              <div class="container mt-5 card-search-container">
+              <div class=" mt-5 card-search-container">
                 <div class="row justify-content-center">
-                    <div class="col-md-6 card-search">
+                    <div class="col-md-4 col-sm-8 card-search">
                         <h2 class="mb-4">SIMPLE, RAPIDE ET GRATUIT</h2>
                         <form >
                             <div class="form-group">
@@ -170,17 +171,46 @@
                                 </select>
                             </div>
                           
-                            <button type="submit" class="btn text-white valider-search-card mx-auto">Valider</button>
+                            <button type="button" class="btn text-white valider-search-card mx-auto w-50" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Valider</button>
                         </form>
                     </div>
-                    <div class="col-md-6 my-4 d-none d-lg-block ">
-                        <div class="card border-0 ">
-                          <div class="card-body">
-                              <h5 class="card-title car-hero-title ">Découvrez gratuitement la valeur <br> de votre véhicule</h5>
-                              <img src="../images/Voitures 1.png" class=" car-hero-img" alt="...">
-                            </div>
-                        </div>
+                    <div class="col-md-8  col-sm-2 d-none d-lg-block ">
+
+                        
+                              <h5 class=" car-hero-title ">Découvrez gratuitement la valeur  de votre véhicule</h5>
+                              <img src="../images/Voitures 1.png" class="img-fluid car-hero-img" alt="...">
+                           
+                        
                       </div>
+                      <!-- Vertically centered modal -->
+                      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                       
+                          <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title text-center id="staticBackdropLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <ul class="list-group list-group-flush">
+                                  <li class="list-group-item">An item</li>
+                                  <li class="list-group-item">A second item</li>
+                                  <li class="list-group-item">A third item</li>
+                                  <li class="list-group-item">A fourth item</li>
+                                  <li class="list-group-item">And a fifth one</li>
+                                </ul>
+                              </div>
+                              <div class="modal-footer">
+                             
+                           
+                              </div>
+                            </div>
+                          </div>
+
+                      </div>
+
+
+
                 </div>
             </div>
             
@@ -194,7 +224,7 @@
     </section>
     </div>
     <section class="notre-cote-auto">
-      <div class="">
+      
         <div class="row align-items-center">
             <div class="col-lg-6 col-sm-12">
                 <img src="../images/Plan de travail 2 1.png" class="img-fluid car-hero" alt="...">
@@ -209,9 +239,10 @@
                     <li class=" border-0  text-white  bg-transparent">And a fifth one</li>  </ul>
             </div>
            
-          </div>
+         
       </div>
     </section>
+    
     <section class="nos-marque-auto">
         <h5 class="text-white text-center">MARQUES LES PLUS POPULAIRES</h5>
       <div class="container">
@@ -220,10 +251,10 @@
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            
             </div>
             <div class="carousel-inner">
-              <div class="carousel-item active">
+              <div class="carousel-item active" data-bs-interval="1800">
                 <div class="d-flex justify-content-around">
                 <img src="./images//logo/Logo BMW.png" class="img-fluid logo-car " alt="...">
                 <img src="./images//logo/Logo Ford.png" class="img-fluid logo-car " alt="...">
@@ -232,7 +263,7 @@
                 <img src="./images//logo/Logo Mercedes Benz.png" class="img-fluid logo-car " alt="...">
               </div>
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item" data-bs-interval="1800">
               
                   <div class="d-flex justify-content-around  ">
                 <img src="./images//logo/Logo Nissan.png" class="img-fluid logo-car " alt="...">
@@ -243,17 +274,8 @@
            
                 </div>
               </div>
-              <div class="carousel-item">
-               
-                  <div class="d-flex justify-content-around">
-                  <img src="./images//logo/Logo BMW.png" class="img-fluid logo-car " alt="...">
-                  <img src="./images//logo/Logo Ford.png" class="img-fluid logo-car " alt="...">
-                  <img src="./images//logo/Logo Hyundai.png" class="img-fluid logo-car " alt="...">
-                  <img src="./images//logo/Logo Jeep.png" class="img-fluid logo-car " alt="...">
-                  <img src="./images//logo/Logo Mercedes Benz.png" class="img-fluid logo-car " alt="...">
-            
-                </div>
-              </div>
+     
+       
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicatorsmodel1" data-bs-slide="prev">
               <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -266,7 +288,7 @@
           </div>
          
       </div>
-      <div class="d-grid gap-2 col-6 mx-auto w-xl-25 w-sm-100 m-4 justify-content-center">
+      <div class="d-grid gap-2  mx-auto  w-sm-100 m-4 justify-content-center">
         <a class="btn btn-primary  rounded-pill bg-light text-black m-t-5 " href="#" role="button">VOIR TOUTES LES MARQUES</a>
 
       </div>
@@ -274,14 +296,14 @@
     <section class="vos-avis">
       <div class="container">
         <h5 class="text-white text-center m-5 text-uppercase fs-2">VOS AVIS NOUS IMPORTENT</h5>
-        <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+        <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
               <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner comment">
-              <div class="carousel-item active h-50"> 
+              <div class="carousel-item active h-50" > 
                 <div class="card card-avis w-xl-50 w-sm-100 ">
                   <div class="d-md-flex justify-content-around d-block ">
                    <div class="card-body">
@@ -350,7 +372,7 @@
                
                
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item" >
                 <div class="card card-avis w-xl-50 w-sm-100">
                   <div class="d-md-flex justify-content-around d-block">
                     <div class="card-body">
@@ -416,7 +438,7 @@
                   </div>
               </div>
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item" >
                 <div class="card card-avis w-xl-50 w-sm-100">
                   <div class="d-md-flex justify-content-around d-block">
                     <div class="card-body">
@@ -497,11 +519,10 @@
 
           </div>
       </div>
+      </div>
     </section>
     <section>
 
-      
-  
       <div class="container faq">
       <div class="card-body card-faq">
         <h5 class="card-title text-white text-center m-5">FAQ</h5>
@@ -511,8 +532,8 @@
             Qu’est-ce que NIATA ?
           </p>
         </p>
-          <div class="collapse" id="niata">
-            <div class="card card-body">
+          <div class="collapse " id="niata">
+            <div class="card card-body reponse-faq">
               Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
             </div>
           </div>
@@ -522,7 +543,7 @@
             </p>
           </p>
             <div class="collapse" id="nouvelle-voiture">
-              <div class="card card-body">
+              <div class="card card-body reponse-faq">
                 Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
               </div>
             </div>
@@ -532,7 +553,7 @@
               </p>
             </p>
               <div class="collapse" id="type-voiture">
-                <div class="card card-body">
+                <div class="card card-body reponse-faq">
                   Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
                 </div>
               </div>
@@ -542,7 +563,7 @@
                 </p>
               </p>
                 <div class="collapse" id="concessionnaires">
-                  <div class="card card-body">
+                  <div class="card card-body reponse-faq">
                     Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
                   </div>
                 </div>
@@ -552,7 +573,7 @@
                   </p>
                 </p>
                   <div class="collapse" id="modèlepersonnalisé">
-                    <div class="card card-body">
+                    <div class="card card-body reponse-faq">
                       Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
                     </div>
                   </div>
@@ -562,7 +583,7 @@
                     </p>
                   </p>
                     <div class="collapse" id="questions">
-                      <div class="card card-body">
+                      <div class="card card-body reponse-faq">
                         Consultez notre <a href="#">foire aux questions</a> pour connaître plus d'informations sur nos services.                      </div>
                     </div>
         </p>
@@ -573,7 +594,7 @@
       </div>
     </section>
      </div>
-     <div class="bg-light w-100">
+     <div class="bg-light ">
       <div class="container bg-light container-newsletter ">
         <div class="row   p-5">
             <div class="col-lg-6 col-sm-12  bg-transparent ">
@@ -606,7 +627,7 @@
 
       <div class="container footer"> 
         <div class="row">
-      <div class="col-md-2 mx-3"> <div >
+      <div class="col-md-2 mx-3"> 
        <h5 class="text-white">À propos de NIATA</h5>
        <ul class="list-group list-group-flush text-white a-propos">
         <li class="  text-white  bg-transparent fs-6 p-0 m-0"><a href="" class="text-white
@@ -619,7 +640,7 @@
             ">Devenir annonceur pub</a></li>
         <li class=" text-white  bg-transparent"><a href="" class="text-white
             ">Devenir partenaire pro</a></li>  </ul>
-    </div></div>
+    </div>
       <div class="col-md-2 mx-3"> <div >
         <h5 class="text-white">Contacts</h5>
        <ul class="list-group list-group-flush text-white ">
@@ -657,9 +678,10 @@
             <li class="  text-white  bg-transparent "><a href=""><img src="../images/Disponible sur Google Play 1.png" class="w-50 " alt=""></a> </li>
             <li class="  text-white  bg-transparent"><a href=""><img src="../images/App store 1.png" class="w-50" alt=""></a></li> </ul>
     </div></div>
-</div>
+
 <hr class=" bg-light footer-line">
 <p class="text-center text-white">Copyright © 2023 DEFAR Sci. Tous droits réservés</p>
+</div>
 </div>
     <!-- Optional JavaScript; choose one of the two! -->
 
